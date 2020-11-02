@@ -47,10 +47,15 @@
         <section class="calc">
             <div class="calcScreen">
                 <input id="inputToCalc" class="calInput">
+                <span id="results">
+                    <p id="current-calculation">0</p>
+                    <p id="current-result">0</p>
+                </span>
             </div>
             <div class="col-md-12 d-flex differshade">
                 <div class="col-md-3">
-                    <button class="btn" id="btnReset" onclick="clear()">C</button>
+                    <!-- <input type="button" value="c" onclick="clear()">C -->
+                    <button class="btn" id="btnReset" value="c" onclick="clear()">C</button>
                 </div>
                 <div class="col-md-3">
                     <button class="btn" id="btnCombineAddSub"><sup>+</sup>/<sub>-</sub></button>
@@ -115,7 +120,7 @@
                     <button class="btn" onclick="show(',')">,</button>
                 </div>
                 <div class="col-md-3 differshade grad">
-                    <button id="equalToBtn" class="btn" onclick="generateResults()">=</button>
+                    <button id="equalToBtn" class="btn">=</button>
                 </div>
             </div>
             <p id="currentVal"></p>
